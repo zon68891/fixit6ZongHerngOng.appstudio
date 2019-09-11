@@ -28,8 +28,34 @@ console.log(pos)
 var pos2 = pets.indexOf('Cindy')//Write the command that gives the indexOf where "Cindy" is located (this should return-1).
 console.log(pos2)
 //Create a new variable called "withMarmaduke" and set it equal to the original array concatenated 
-with the string "Marmaduke". Output this new array variable to the console.
-var withMarmaduke = pets + ",Marmaduke" 
+//with the string "Marmaduke". Output this new array variable to the console.
+var withMarmaduke = pets.concat("Marmaduke")
 console.log(withMarmaduke)
+/*
+Use the .shift() array method and show the removed array item in a console.log statement.
+Using the .unshift() array method, add the name 'Barney' to the array.
+Using an array method, add this array to the end of the original pet name array to make a new array named allPets. 
+['Ted','Fred','Jed','Ned','Ed','Zed'] . Display the new array allPets. Use the allPets array for the rest of this exercise.
+Use the .shift() array method again and show the array item that was removed this time in a console.log statement.
+Using the array method .join(), create a string variable named 'pets' that holds all of the pet names, separated by commas.
+Using the .unshift() array method, add the name 'Agnes' to the array. 
+*/
+var removed3 = pets.shift()
+console.log(removed3)
+console.log(pets)
+pets.unshift('Barney')
+console.log(pets)
+var allPets = pets.concat('Ted','Fred','Jed','Ned','Ed','Zed')
+console.log(allPets)
+var removed4 = allPets.shift()
+console.log(removed4)
+console.log(allPets)
+var pets = allPets.join();
+console.log(pets) 
+var newLength = allPets.unshift('Agnes');
+console.log(allPets)
+
+
+
 
 
